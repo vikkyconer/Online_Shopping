@@ -2,13 +2,28 @@
 <html>
 <head>
   <title>OnlineShopping</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body class ='<%= controller.controller_name %>' >
+	<div id = "banner" >
+		<%= image_tag("logo.jpg") %>
+		<%= @page_title || "Online Store" %>
+	</div>
+	<div id = "columns" >
+		<div id = "side" >
+			<ul>
+				<li><a href="http://www....">Home</a></li>
+				<li><a href="http://www..../faq">Questions</a></li>
+				<li><a href="http://www..../news">News</a></li>
+				<li><a href="http://www..../contact">Contact</a></li>
+			</ul>
+		</div>
 
-<%= yield %>
-
+		<div id = "main">
+			<%= yield %>
+		</div>
+	</div>
 </body>
 </html>
