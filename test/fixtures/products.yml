@@ -11,3 +11,12 @@ two:
   description: MyText
   image_url: MyString
   price: 9.99
+
+ruby:
+  title: Programming ruby 1.9
+  description:
+    Ruby is fastest growing language and most dynamic language.
+    Ruby is fully object oriented and is more readable than any 
+    other language.
+  price: 40.33
+  image_url:  ruby.png
